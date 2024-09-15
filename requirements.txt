@@ -1,0 +1,5 @@
+django
+pytest-django
+pylint
+selenium
+pre-commit

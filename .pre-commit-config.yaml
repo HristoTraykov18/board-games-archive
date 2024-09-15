@@ -1,0 +1,40 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: debug-statements
+
+  - repo: https://github.com/hhatto/autopep8
+    rev: v2.3.1
+    hooks:
+    - id: autopep8
+      name: autopep8 (python)
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+    - id: isort
+      name: isort (python)
+
+  - repo: local
+    hooks:
+    - id: pylint
+      name: pylint check
+      entry: pylint
+      language: system
+      types: [python]
+      exclude: manage.py
+      require_serial: true
+
+  - repo: local
+    hooks:
+    - id: pytest-check
+      name: pytest check
+      entry: pytest
+      language: system
+      types: [python]
+      pass_filenames: false
+      always_run: true
