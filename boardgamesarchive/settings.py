@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'archive.apps.ArchiveConfig',
+    'daleofmerchants.apps.DaleofmerchantsConfig',
+    'diceforge.apps.DiceforgeConfig',
+    'oceanos.apps.OceanosConfig',
+    'unmatched.apps.UnmatchedConfig',
 ]
 
 MIDDLEWARE = [
@@ -105,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Sofia'
 
 USE_I18N = True
 
