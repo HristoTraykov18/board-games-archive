@@ -4,3 +4,4 @@ pylint
 pylint-django
 selenium
 pre-commit
+Pillow
